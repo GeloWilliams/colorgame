@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Chewy|Nothing+You+Could+Do" rel="stylesheet"> 
+        
+    </head>
+    <body>
+    <div class="lgcontainer">
+
+    <div class="row">
+        <div class="col-md-12">
+                <img class="bg fadeIn" src="images/sceneb.jpg">
+            <div class="gelo fadeInd slide">
+                <p>Gelo's</p>
+            </div>
+            <div class="rgb colors">
+                <p>RGB Game</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" style="text-align: center; margin: 10px auto"">
+            <form action="/play" method="GET">
+                <button class="gbtn">Play</button>
+            </form>
+        </div>
+            <div class="col-md-6" style="text-align: center; margin: 10px auto">
+            <form action="/play/about" method="GET">
+                <button class="gbtn" style="background-color: #444499;">About</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+    <script type="text/javascript" src="stylesheets/main.js"></script>
+    </body>
+</html>

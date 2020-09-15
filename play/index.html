@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Color Game</title>
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/main.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Chewy|Nothing+You+Could+Do" rel="stylesheet"> 
+		
+  	</head>
+ 	<body>
+ 		<div class="lgcontainer">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>
+					<span id="colorDisplay"><span class="R">R</span><span class="G">G</span><span class="B">B</span></span> 
+					<br>
+					<span id="gametitle">The <span class="R">R</span><span class="G">G</span><span class="B">B</span> Color Game</span>
+					</h1>
+				
+					<div id="stripe">
+						<span id="message"></span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="container">
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+						<div class="square"></div>
+					</div>
+	
+<!-- 1 Click-->
+			
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="casey" src="images/casey.png">
+						<p class="correct">Spot-on! I'm so proud of you!</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>
+					</div>
+					
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="casey" src="images/casey.png">
+						<p class="correct">I couldn't have done better myself.</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>
+					</div>
+					
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="soy" src="images/soy.png">
+						<p class="correct">All in one Click! Great!</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>				
+					</div>
+					
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="soy" src="images/soy.png">
+						<p class="correct">Exactly, you got it!</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>				
+					</div>
+					
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="phil" src="images/phil.png">
+						<p class="correct">First choice? You're pretty good...</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>
+					</div>
+				
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="phil" src="images/phil.png">
+						<p class="correct">Oh... maybe you are an expert...</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>
+					</div>
+					
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="sin" src="images/sin.png">
+						<p class="correct">Your first guess? Caught me by surprise!</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>
+					</div>
+					
+					<div class="imagesA display-off">
+						<img class="ctnimg" style="width: 400px" id="sin" src="images/sin.png">
+						<p class="correct">On the first try, right on!</p>
+						<p class="letter">Grade: <span class="bletter">A</span></p>
+					</div>
+					
+		<!--2 Clicks-->
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">Great job! Let's try it once more!</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+				
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">Look at you, I'm proud.</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct">You got it! Another round?</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct">That's it! Keep going!</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct">Hmph... think you were pretty lucky...</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct">Yeah I admit. You're good.</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct">Yeah.. that was nice. Let's see more of this.</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+					<div class="imagesB display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct">Excellent. On your second guess.</p>
+						<p class="letter">Grade: <span class="bletter">B</span></p>
+					</div>
+					
+		<!--3 Clicks-->
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">Not bad! You're getting there!</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">Good, good, let's do another round.</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+				
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct">Good, good! Keep going!</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct">Almost there, but good job!</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct">Could be a little better...</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct">About what I expected...</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct">Okay... let's see you do that again.</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>	
+					
+					<div class="imagesC display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct">Hmm... don't drop the ball!</p>
+						<p class="letter">Grade: <span class="bletter">C</span></p>
+					</div>
+					
+		<!--4 Clicks-->
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">A little tough, but I believe in you.</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>	
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">Try a bit harder. You can do it.</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>	
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct"> You should play again.</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>	
+				
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct"> It's correct but, you need to be faster.</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct"> Wow... that wasn't so great...</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>	
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct">Think I'm better than you haha...</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>	
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct"> Okay... at least it wasn't the last one.</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>	
+					
+					<div class="imagesD display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct">Meh... I don't see it.</p>
+						<p class="letter">Grade: <span class="bletter">D</span></p>
+					</div>
+					
+		<!--5 or more Clicks-->
+					
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">Hmmm... not what I expected from you.</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+				
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/casey.png">
+						<p class="correct">What happened? I know you're better!</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+				
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct"> Sorry, I think you should study harder.</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+				
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/soy.png">
+						<p class="correct">It's a bit tough in the beginning.</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+					
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct"> That sure took you a while...</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+					
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/phil.png">
+						<p class="correct"> Guess you didn't get it...</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+					
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						<p class="correct">Eh? Methinks you need loads of practice.</p>
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+					
+					<div class="imagesE display-off">
+						<img class="ctnimg" style="width: 400px" src="images/sin.png">
+						
+						<p class="correct">Meh...</p>
+						
+						<p class="letter">Grade: <span class="bletter">F</span></p>
+					</div>	
+				</div>
+			</div>
+			<br>
+			<div id="btm-stripe">
+					<span style="float: left;">
+						<button id="reset">Change Colors?</button>
+					</span>
+					<span style="float: right;">
+						<button id="easyBtn">Easy</button>
+						<button id="hardBtn" class="selected">Hard</button>
+					</span>
+			</div>
+			<div style="float-right;">
+					<form action="../play/about" method="GET">
+						<button class="gabtn">What is RGB?</button>
+					</form>
+			</div>
+		</div>
+	  	<script type="text/javascript" src="stylesheets/main.js"></script>
+ 	</body>
+</html>
